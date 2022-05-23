@@ -38,7 +38,7 @@ function my_submenu_output() {
   ob_start();
 ?>
   <div class="wrap wqmain_body">
-    <h3>View Entries</h3>
+    <h3>View Themes</h3>
     <?php echo $message; ?>
     <form id="entry-table" method="GET">
       <input type="hidden" name="page" value="<?php echo $_REQUEST['page'] ?>"/>
