@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
     $('.wqmessage').html('');
     $('.wqsubmit_message').html('');
 
-    var wqtitle = $('#wqtitle').val();
+    var wqtitle = $('#wqThemeFormation').val();
     var wqdescription = $('#wqdescription').val();
 
     if(wqtitle=='') {
@@ -48,7 +48,7 @@ jQuery(document).ready(function(){
     $('.wqmessage').html('');
     $('.wqsubmit_message').html('');
 
-    var wqtitle = $('#wqtitle').val();
+    var wqtitle = $('#wqThemeFormation').val();
     var wqdescription = $('#wqdescription').val();
 
     if(wqtitle=='') {
