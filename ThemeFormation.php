@@ -70,7 +70,7 @@ function activate_theme_crud_plugin_function() {
   
   function deactivate_theme_crud_plugin_function() {
     global $wpdb;
-    $table_name = 'theme_crud';
+    $table_name = 'wp_theme_crud';
     $sql = "DROP TABLE IF EXISTS $table_name";
     $wpdb->query($sql);
   }
@@ -134,7 +134,7 @@ class EntryListTable extends WP_List_Table {
 
     function process_bulk_action() {
       global $wpdb;
-      $table_name = "theme_crud";
+      $table_name = "wp_theme_crud";
         if ('delete' === $this->current_action()) {
             $ids = isset($_REQUEST['id']) ? $_REQUEST['id'] : array();
             if (is_array($ids)) $ids = implode(',', $ids);
@@ -147,7 +147,7 @@ class EntryListTable extends WP_List_Table {
     function prepare_items() {
       global $wpdb,$current_user;
 
-      $table_name = "theme_crud";
+      $table_name = "wp_theme_crud";
 		  $per_page = 10;
       $columns = $this->get_columns();
       $hidden = array();

@@ -1,7 +1,7 @@
 <?php
 if(isset($_REQUEST['entryid']) && $_REQUEST['entryid']!='') {
   global $wpdb;
-  $data = $wpdb->get_row( "SELECT * FROM `theme_crud` WHERE id = '".$_REQUEST['entryid']."'" );
+  $data = $wpdb->get_row( "SELECT * FROM `wp_theme_crud` WHERE id = '".$_REQUEST['entryid']."'" );
 ?>
   <div class="wrap wqmain_body">
     <h3 class="wqpage_heading">Edit Entry</h3>
