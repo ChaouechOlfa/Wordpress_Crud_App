@@ -10,7 +10,7 @@ if(isset($_REQUEST['entryid']) && $_REQUEST['entryid']!='') {
         <input type="hidden" name="wqentryid" id="wqentryid" value="<?=$_REQUEST['entryid']?>" />
         <div class="wqlabel">Title</div>
         <div class="wqfield">
-          <input type="text" class="wqtextfield" name="wqThemeFormation" id="wqThemeFormation" placeholder="Entrer le theme de la formation" value="<?=$data->title?>" />
+          <input type="text" class="wqtextfield" name="wqThemeFormation" id="wqThemeFormation" placeholder="Entrer le theme de la formation" value="<?=$data->ThemeFormation?>" />
         </div>
         <div id="wqtitle_message" class="wqmessage"></div>
 
